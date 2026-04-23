@@ -9,7 +9,7 @@ description:
   zh_Hans: 使用 Gemini API 生成图像
 parameters:
   - name: prompt
-    type: string
+    输入: string
     required: true
     label:
       en_US: Prompt
@@ -21,9 +21,9 @@ parameters:
     form: llm
 
   - name: aspect_ratio
-    type: select
+    输入: select
     required: false
-    default: "1:1"
+    默认: "1:1"
     options:
       - label:
           en_US: 1:1 (Square)
@@ -55,9 +55,9 @@ parameters:
     form: llm
 
   - name: quality
-    type: select
+    输入: select
     required: false
-    default: "standard"
+    默认: "standard"
     options:
       - label:
           en_US: Standard (1024px)
@@ -81,18 +81,22 @@ parameters:
     form: llm
 
   - name: model
-    type: select
+    输入: select
     required: false
-    default: "gemini-2.0-flash-exp-image-generation"
+    默认: "gemini-2.0-flash-exp-image-generation"
     options:
       - label:
-          en_US: Gemini 2.0 Flash
-          zh_Hans: Gemini 2.0 Flash
-        value: "gemini-2.0-flash-exp-image-generation"
+          en_US: gemini-2.5-flash-image-preview
+          zh_Hans: gemini-2.5-flash-image-preview
+        value: "gemini-2.5-flash-image-preview"
       - label:
-          en_US: Gemini 2.5 Flash
-          zh_Hans: Gemini 2.5 Flash
-        value: "gemini-2.5-flash-image"
+          en_US: gemini-3-pro-image-preview
+          zh_Hans: gemini-3-pro-image-preview
+        value: "gemini-3-pro-image-preview"
+      - label:
+          en_US: gemini-3.1-flash-image-preview
+          zh_Hans: gemini-3.1-flash-image-preview
+        value: "gemini-3.1-flash-image-preview"
     label:
       en_US: Model
       zh_Hans: 生成模型
