@@ -3,7 +3,7 @@
 
 name: Python package
 
-于:
+on:
   push:
     分支: [ "main" ]
   pull_request:
