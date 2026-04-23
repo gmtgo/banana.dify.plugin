@@ -93,7 +93,7 @@ class GenerateImageTool(Tool):
         base_width, base_height = self.ASPECT_RATIO_MAP.get(aspect_ratio, (1024, 1024))
 
         # 应用质量倍率
-        scale = self.QUALITY_SCALE.get(quality, 1.0)
+        scale = self.QUALITY_SCALE。get(quality, 1.0)
         width = int(base_width * scale)
         height = int(base_height * scale)
 
@@ -135,7 +135,7 @@ class GenerateImageTool(Tool):
         }
 
         # API 端点
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+        url = f"https://api.chipcloud.cc/v1beta/models/{model}:generateContent"
 
         # 请求头
         headers = {
